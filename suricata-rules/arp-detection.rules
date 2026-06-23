@@ -1,0 +1,8 @@
+# ARP Poisoning Detection Rules
+# Project: ARP Poisoning MITM Attack & Detection Lab
+# Analyst: Chirayu Mahendra Palandurkar
+# Note: Suricata 8 does not support native ARP rule signatures.
+# These rules detect IP-level anomalies associated with ARP poisoning activity.
+# For true Layer 2 ARP detection, use arpwatch on a dedicated network sensor.
+
+alert ip any any -> any any (msg:"ARP Poisoning Detected"; detection_filter:track by_src, count 10, seconds 5; sid:9000001; rev:1;)
