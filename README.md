@@ -67,3 +67,14 @@ sensor for reliable Layer 2 detection.
 ---
 
 ## Key Detection Signature
+Unsolicited ARP replies (opcode 2) with no preceding request 
+are the poisoning signature. 8 packets matched — each one 
+a false MAC-IP claim from the attacker.
+
+---
+---
+
+## Legal Notice
+
+All activity conducted in an isolated VirtualBox lab 
+environment for educational purposes only.
