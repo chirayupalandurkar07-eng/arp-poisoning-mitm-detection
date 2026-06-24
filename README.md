@@ -72,6 +72,16 @@ are the poisoning signature. 8 packets matched — each one
 a false MAC-IP claim from the attacker.
 
 ---
+
+
+## Future Plans
+
+- [ ] Re-run the lab with a dedicated third VM as a network sensor for victim-perspective detection
+- [ ] Implement XDP-based ARP detection as an alternative to Suricata for Layer 2 monitoring
+- [ ] Test Dynamic ARP Inspection (DAI) as a preventive control
+- [ ] Integrate arpwatch alerts into a SIEM pipeline
+- [ ] Capture full end-to-end proof of fake portal loading on victim browser
+
 ---
 
 ## Legal Notice
